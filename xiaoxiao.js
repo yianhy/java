@@ -313,7 +313,7 @@ async function Request(t) {
 }
 //From chavyleung's Env.js
 // prettier-ignore
-async function Env(t, e) {
+function Env(t, e) {
     class s {
         constructor(t) {
             this.env = t
