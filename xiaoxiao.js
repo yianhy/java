@@ -93,8 +93,8 @@ class UserInfo {
         this.headers = {
             'xx-platform': `ios`,
             'Host': `xxyx-client-api.xiaoxiaoyouxuan.com`,
-            'User-Agent': `XiaoXiaoYouXuan/20127 CFNetwork/1331.0.7 Darwin/21.4.0`,
-            'xx-version': `20328`,
+            'User-Agent': `XiaoXiaoYouXuan/30010 CFNetwork/3826.400.120 Darwin/24.3.0`,
+            'xx-version': `30010`,
             'xx-token': this.token
         };
         this.fetch = async (o) => {
