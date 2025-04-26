@@ -204,7 +204,8 @@ async function getCookie() {
 
             if (!body) throw new Error("错误的运行方式，请切换到cron环境");
 
-            if (!(header["xx-token"] && body?.data?.name)) throw new Error("获取token失败！参数缺失");
+            if (!header["xx-token"]) throw new Error("获取token失败！请求头中缺少xx-token参数");
+            if (!body?.data?.name) throw new Error("获取token失败！响应体中缺少data.name参数");
 
             const newData = {
                 "userId": body?.data?.name,
